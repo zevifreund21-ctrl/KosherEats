@@ -1,0 +1,1 @@
+{"dependencies":{"express":"^4.21.2"},"description":"KosherEats — kosher food delivery in Brooklyn. Real restaurants, real menus.","engines":{"node":">=22.5.0"},"main":"server.js","name":"koshereats","scripts":{"seed":"node seed.js","start":"node server.js"},"version":"1.0.0"}
