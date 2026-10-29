@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+<title>KosherEats — Kosher food delivery in Brooklyn</title>
+<link rel="stylesheet" href="/style.css">
+</head>
+<body>
+<header id="topbar">
+  <a href="#/" class="logo" id="logo-link">🍽️ Kosher<span>Eats</span></a>
+  <div class="top-search">
+    <input id="global-search" type="search" placeholder="Search restaurants or dishes…">
+  </div>
+  <div class="top-actions">
+    <span class="top-loc">📍 Brooklyn, NY</span>
+    <button id="btn-favorites" class="top-btn" title="Favorites">❤️</button>
+    <button id="btn-orders" class="top-btn" title="My orders">🧾</button>
+    <button id="btn-dashboard" class="top-btn hidden" title="Restaurant dashboard">🏪</button>
+    <button id="btn-account" class="top-btn">Log in</button>
+    <button id="btn-cart" class="top-btn cart-btn" title="Cart">🛒 <span id="cart-count" class="cart-count hidden">0</span></button>
+  </div>
+</header>
+
+<main id="view"></main>
+
+<!-- Cart drawer -->
+<div id="cart-overlay" class="hidden">
+  <div id="cart-drawer">
+    <div class="cart-head">
+      <h2>Your cart</h2>
+      <button id="cart-close">✕</button>
+    </div>
+    <div id="cart-restaurant"></div>
+    <div id="cart-items"></div>
+    <div id="cart-summary"></div>
+    <div class="cart-foot">
+      <button id="btn-checkout" class="btn-primary">Go to checkout</button>
+    </div>
+  </div>
+</div>
+
+<!-- Auth / generic modal -->
+<div id="modal-overlay" class="hidden">
+  <div class="modal">
+    <div class="modal-header">
+      <h2 id="modal-title"></h2>
+      <button id="modal-close">✕</button>
+    </div>
+    <div id="modal-body"></div>
+  </div>
+</div>
+
+<div id="toast" role="status"></div>
+
+<script src="/app.js"></script>
+</body>
+</html>
